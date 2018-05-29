@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    .inner
+        form.form(action="/register" method="POST")
+            h2 Register
+            laybel(for="name") Name
+            input(type="text" name="name" required)
+            laybel(for="email") Email
+            input(type="email" name="email" required)
+            laybel(for="password") Password
+            input(type="password" name="password" required)
+            laybel(for="password-confirm") Confirm Password
+            input(type="password" name="password-confirm" required)
+            input.button(type="submit" value="Register")
+            

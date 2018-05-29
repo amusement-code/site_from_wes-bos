@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    div.class
+        - const upperDog = dog.toUpperCase();
+        p hello #{name.toUpperCase()}
+        span sup?
+        img(src="dog.jpg", alt=`Dog ${upperDog}`)
+
+    h2
+        | hello 
+        em how are you?
+    
+    p sales ends in #{h.moment().endOf('day').fromNow()}
